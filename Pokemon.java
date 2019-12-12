@@ -1,16 +1,18 @@
 public class Pokemon {
+    // fields used for the program
     private boolean isFishing;
     private boolean isFighting;
     private int hitPoints;
     private String name;
 
+    // the constructor used to initialize the fields through paramets
     public Pokemon(boolean isFishing, boolean isFighting, int hitPoints, String name) {
         this.isFishing = isFishing;
         this.isFighting = isFighting;
         this.hitPoints = hitPoints;
         this.name = name;
         
-
+        // ensures that hitPoints is never over 255
         this.tooHigh();
 
     }
